@@ -1,0 +1,104 @@
+html{
+    font-size: 16px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, section, footer{
+    padding: 20px 0;
+
+}
+
+.debug .container {
+    border: 2px solid;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 300px;
+    
+}
+
+.debug .card {
+    border: 1px dashed red;
+}
+
+.debug .card__info {
+    border: 1px double blue;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card .card__img-wrapper {
+    position: relative;
+}
+
+.card .card__like-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.card__badge-wrapper{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+.card__badge-wrapper .badge{
+    color: white;
+    font-weight: 600;
+    padding: 4px 6px;
+}
+
+.badge.badge--sale{
+    background-color: red;
+}
+
+.badge.badge--category{
+    background-color: green;
+}
+
+.card .card__main-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card__img-wrapper:hover .card__main-img {
+    visibility: hidden;
+}
+
+.card-wrapper .card {
+    display: inline-block;
+    width: 32%;
+    margin-bottom: 25px;
+    font-size: 16px;
+    margin-right: 2%;
+}
+
+.card-wrapper{
+    font-size: 0;
+}
+
+.cards-wrapper .card:nth-child(3n) {
+    margin-right: 0;
+}
